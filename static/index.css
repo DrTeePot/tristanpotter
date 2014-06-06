@@ -1,0 +1,78 @@
+/* Tristan Potter, 2013
+** This file is the style-sheet for my website at http://csclub.uwaterloo.ca/~twmpotte
+** I used the free open source font Exo found at: http://www.google.com/fonts/specimen/Exo
+**     used under the SIL Open Font License, version 1.1 which can be viewed here:
+**     http://scripts.sil.org/OFL
+*/
+
+/* Carousel stuff. from now on this is index only*/
+#carousel-wrapper{
+    position : relative;
+
+    padding: 50% 0 0 0;
+    height : 0;
+
+    background-color: grey;
+    z-index: -99999;
+}
+#carousel{
+    position:absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left : 0;
+    right: 0;
+
+    overflow: hidden;
+
+    background-color: red;
+
+}
+#carousel-nav{
+    position: absolute;
+    display:block;
+    top : 50%;
+    width: 100%;
+    margin: -20 0 0 0;
+    z-index: 999;
+}
+
+#carousel-inner{
+    position: absolute;
+    overflow: hidden;
+    height : 100%;
+}
+.carousel-slide{
+    position: relative;
+    float:left;
+    display: inline-block;
+
+    width : 100%;
+    height: 100%;
+}
+
+.carousel-image{
+    height : 100%;
+    width: 100%
+}
+
+.carousel-desc{
+    position:absolute;
+    bottom : 0;
+    padding: 3% 0 3% 0;
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+}
+
+
+#prev{
+    padding: 10px;
+    float: left;
+}
+
+#next{
+    padding:10px;
+    float:right;
+}
+
+

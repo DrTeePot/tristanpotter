@@ -1,0 +1,121 @@
+/* Tristan Potter, 2013
+** This file is the style-sheet for my website at http://csclub.uwaterloo.ca/~twmpotte
+** I used the free open source font Exo found at: http://www.google.com/fonts/specimen/Exo
+**     used under the SIL Open Font License, version 1.1 which can be viewed here:
+**     http://scripts.sil.org/OFL
+*/
+@import url(reset.css);
+@import url(http://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700,100italic,200italic,300italic,400italic,500italic,600italic,700italic);
+/*
+@font-face{
+    font-family:"Exo Thin";
+    src: url(exo/Exo-Thin.otf);
+}
+@font-face{
+    font-family:"Exo Thin";
+    font-weight:bold;
+    src: url(exo/Exo-Medium.otf);
+
+}
+@font-face{
+    font-family:"Exo Light";
+    src: url(exo/Exo-Light.otf);
+}
+*/
+
+/*      Defaults        */
+body{
+    width: 100%;
+    margin: 0 auto;
+    font-family:"Exo";
+}
+
+a:hover,a:active{
+    color:#7A991A;
+}
+
+a{
+    color:#98bf21;
+    text-decoration:none;
+}
+
+
+
+header {
+    position: fixed;
+    width: 100%;
+    min-width: 820px;
+    background-color: #292929;
+}
+
+#title {
+    padding:20px 0 20px 20px;
+    float:left;
+    width : 200px;
+    background-color: #292929;
+    font-size
+}
+#title:hover{
+    background-color : #7A991A;
+    color: #000;
+}
+
+/* TODO: make nav better*/
+nav {
+    float:right;
+    background-color: #292929;
+}
+
+nav ul{
+    width : 100%;
+    list-style : none;
+    overflow: hidden;
+
+    margin: 0px;
+    padding:0px;
+}
+nav ul li{
+    display:block;
+    width : 150px;
+    float: left;
+    text-align: center;
+}
+
+.nav_link{
+
+    padding : 20px 0 20px 0;
+    background-color: #292929;
+}
+.nav_link:hover{
+    background-color: #7A991A;
+    color: #000;
+}
+
+nav ul li a{
+    display: block;
+    width : 100%;
+}
+
+main{
+    position: fixed;
+    top: 60px;;
+    width:100%;
+
+}
+
+#content{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 300px;
+    background-color: red;
+}
+
+footer{
+
+}
+
+
+.clear{ /* allows for the reseting of floats and such*/
+    clear:both;
+}

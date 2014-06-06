@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+Tristan Potter 2014
+http://csclub.uwaterloo.ca/~twmpotte
+This is a website about me, using the font Exo found at http://www.google.com/fonts/specimen/Exo
+Used with regards to the SIL Open Font License 1.1 : http://scripts.sil.org/OFL
+
+/index.html
+This is the homepage.
+-->
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" href="{% static "base.css" %}">
+        {% block head %}{% endblock %}
+
+        <title>Tristan Potter</title>
+    </head>
+
+    <body>
+        <header>
+            <a href="/" style="display:block">
+                <div id="title">
+                    Tristan<b>Potter</b>
+                </div>
+            </a>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="nav" href="/blog">
+                            <div class="nav_link">Blog</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav" href="/projects">
+                            <div class="nav_link">Projects</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav" href="/involvements">
+                            <div class="nav_link">Involvements</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav" href="/about">
+                            <div class="nav_link">About</div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="clear"></div>
+        </header>
+
+        <main>
+            <div id="content">
+                {% block main %}
+                {% endblock %}
+            </div>
+            <footer>
+               <center> stuff that goes in footer here!!</center>
+            </footer>
+        </main>>
+    </body>
+</html>

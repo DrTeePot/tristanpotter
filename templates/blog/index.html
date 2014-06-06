@@ -1,0 +1,16 @@
+{% extends 'blog/blog_base.html' %}
+
+{% block blog_body %}
+    {% if posts %}
+        {% for post in posts %}
+            <div class="post">
+                {{ post.title }} <br>
+                {{ post.author }} <br>
+                {{ post.date_created }}<br>
+                {{ post.last_modified }}<br>
+                {{ post.body }}<br>
+                {{ post.image }}<br>
+            </div>
+        {% endfor %}
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+<div id="carousel-wrapper">
+    <div id="carousel">
+        <div id="carousel-nav">
+            <img src="web_resources/previous.png" id="prev" width="50">
+            <img src="web_resources/next.png" id="next" width="50">
+        </div>
+        <div id="carousel-inner">
+            <div class="carousel-slide">
+                <img class="carousel-image" src="web_resources/placeholder1.png">
+                <div class="carousel-desc">
+                    <p>some text here</p>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img class="carousel-image" src="web_resources/placeholder2.png" >
+                <div class="carousel-desc">
+                    <p>some text here</p>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img class="carousel-image" src="web_resources/placeholder3.png" >
+                <div class="carousel-desc">
+                    <p>some text here</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="main">
+    <p>Good day sir. This is a site about me. </p>
+    <p>It has projects both in progress and current; my current involvements; a detailed account of things I have done; and a blog(still in development). If you have any questions about this information, feel free to contact me using the information to the left.</p>
+    <p>Here is a picture of a cat, and a cool picture of &pi; for your pleasure.</p>
+    <br>
+    img src="web_resources/Cat-wallpaper-21.jpg" width="100%" style="display:block;">
+    <br>
+    <a href='http://fineartamerica.com/featured/4-flow-of-life-flow-of-pi-cristian-ilies-vasile.html' size='20'>
+    img src="web_resources/links-pi-cristian.png" width="100%" style="display:block;" title="Pi Art Prints">
+    </a>
+</div>
+{% endblock %}
