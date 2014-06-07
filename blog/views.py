@@ -10,7 +10,7 @@ def index(request):
     #posts = Post.objects.order_by('-time_created')[:5]
 
     return render(request,
-                  'blog/index.html',
+                  'templates/blog/index.html',
                   {'posts': None})
 
 
@@ -27,7 +27,7 @@ def view_post(request, post_id):
 
 
     return render(request,
-                  'blog/post.html',
+                  'templates/blog/post.html',
                   {'post' : post}) #post if valid, none if not
 
 

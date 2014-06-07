@@ -37,7 +37,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
-    'money_tracker'
+    'money_tracker',
+    'home',
 )
 
 MIDDLEWARE_CLASSES = (
