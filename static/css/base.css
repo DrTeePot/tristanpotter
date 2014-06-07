@@ -4,7 +4,6 @@
 **     used under the SIL Open Font License, version 1.1 which can be viewed here:
 **     http://scripts.sil.org/OFL
 */
-@import url(reset.css);
 @import url(http://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700,100italic,200italic,300italic,400italic,500italic,600italic,700italic);
 /*
 @font-face{
@@ -27,7 +26,8 @@
 body{
     width: 100%;
     margin: 0 auto;
-    font-family:"Exo";
+    font-family:"Exo", Helvetica Neue, Helvetica, Arial, Sans-Serif;
+    letter-spacing: 0.12em;
 }
 
 a:hover,a:active{
@@ -46,6 +46,7 @@ header {
     width: 100%;
     min-width: 820px;
     background-color: #292929;
+    z-index: 9999999999;
 }
 
 #title {
@@ -97,18 +98,17 @@ nav ul li a{
 }
 
 main{
-    position: fixed;
-    top: 60px;;
+    position: absolute;
+    top: 55px;;
     width:100%;
-
 }
 
 #content{
-    max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0px;
     min-height: 300px;
     background-color: red;
+    z-index: 0;
 }
 
 footer{

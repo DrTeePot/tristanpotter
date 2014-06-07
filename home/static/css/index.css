@@ -13,7 +13,6 @@
     height : 0;
 
     background-color: grey;
-    z-index: -99999;
 }
 #carousel{
     position:absolute;
@@ -32,15 +31,20 @@
     position: absolute;
     display:block;
     top : 50%;
+    margin: -50px 0 0 0;
     width: 100%;
-    margin: -20 0 0 0;
     z-index: 999;
+}
+
+#carousel-nav img{
+    width : 50px;
 }
 
 #carousel-inner{
     position: absolute;
     overflow: hidden;
     height : 100%;
+    width: 100%;
 }
 .carousel-slide{
     position: relative;
@@ -53,7 +57,7 @@
 
 .carousel-image{
     height : 100%;
-    width: 100%
+    width: 100%;
 }
 
 .carousel-desc{
@@ -74,5 +78,6 @@
     padding:10px;
     float:right;
 }
+
 
 
