@@ -22,3 +22,7 @@
 tristanpotter/settings.pyc
 
 *.pyc
+
+.idea/misc.xml
+
+.idea/vcs.xml
