@@ -10,6 +10,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
@@ -63,9 +64,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'tristanpotter',
         'USER': 'django_tristan',
-        'PASSWORD' : 'django',
-        'HOST' : '127.0.0.1',
-        'PORT' : '5432',
+        'PASSWORD': 'django',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
 
@@ -90,14 +91,14 @@ LOGIN_URL = '/login/'
 STATIC_PATH = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
-                    STATIC_PATH,
-                    )
+    STATIC_PATH,
+)
 
 # Template files
 TEMPLATE_PATH = os.path.join(BASE_DIR, 'templates')
 TEMPLATE_DIRS = {
-                 TEMPLATE_PATH
-                 }
+    TEMPLATE_PATH
+}
 
 # Media files
 MEDIA_URL = '/media/'

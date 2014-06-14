@@ -7,18 +7,27 @@ $(document).ready(function(){
     var console = window.console;
 
     var carouselMain = $('#carousel');
+    var carouselInner = $('#carousel-inner');
+
     var carousel = {
         width: carouselMain.outerWidth(),
         height: carouselMain.outerHeight()
     };
-    var carouselInner = $('#carousel-inner');
 
-    var carouselItems = carouselInner.find('li');
 
-    $('.carousel-image').width(carousel.width).height(carousel.height);
-    carouselInner.css('left', -carousel.width);
+    var on_resize = function(){
+        $('.carousel-image').width(carousel.width).height(carousel.height);
+//        carouselInner.find('li').width(carousel.width).height(carousel.height);
+        carouselInner.css('left', -carousel.width);
+        carousel = {
+            width: carouselMain.outerWidth(),
+            height: carouselMain.outerHeight()
+        };
+    };
 
-    // First we need to move the last item to before the first item
+    on_resize();
+
+    $( window ).resize(on_resize);
 
     // When the user clicks button for sliding right:
     $('#prev').on('click', function(){
@@ -30,16 +39,14 @@ $(document).ready(function(){
         console.log("itemWidth: " + itemWidth);
 
         // new left indent
-        var left = parseFloat(carouselInner.css('left')) - itemWidth;
+        var left = parseFloat(carouselInner.css('left')) + itemWidth;
 
-        carouselInner.animate({'left': left}, {queue: false, duration: 500},
-            function(){
+        carouselInner.animate({'left': left}, {queue: false, duration: 500,
+            complete: function(){
                 carouselInner.css('left', -carousel.width);
-            });
-
-        // put the first item
-        first.before(last);
-        console.log('prev');
+                // put the first item
+                first.before(last);
+            }});
     });
 
     // When the user clicks the button for sliding left:
@@ -52,17 +59,14 @@ $(document).ready(function(){
         console.log("itemWidth: " + itemWidth);
 
         // new left indent
-        var left = parseInt(carouselInner.css('left')) - itemWidth;
+        var left = parseFloat(carouselInner.css('left')) - itemWidth;
 
-        carouselInner.animate({'left': left}, {queue: false, duration: 500},
-            function(){
-                first.before(last);
-                carouselInner.css('left', -carousel.width);
-            });
-
-        // put the first item
-        first.before(last);
-        console.log('next');
+        carouselInner.animate({'left': left}, {queue: false, duration: 500,
+            complete: function(){
+                carouselInner.css('left', -carousel.width + 'px');
+                // put the first item
+                last.after(first);
+            }});
     });
 
 });

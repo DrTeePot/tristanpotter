@@ -10,3 +10,15 @@
 .idea/tristanpotter.iml
 
 .idea/workspace.xml
+
+.idea/misc.xml
+
+.idea/vcs.xml
+
+*.pyc
+
+*.pyc
+
+tristanpotter/settings.pyc
+
+*.pyc
