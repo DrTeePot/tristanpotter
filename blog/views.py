@@ -5,6 +5,7 @@ from blog.models import Post, Comment
 
 # Create your views here.
 
+
 def index(request):
 
     #posts = Post.objects.order_by('-time_created')[:5]
@@ -25,10 +26,9 @@ def view_post(request, post_id):
     except:
         return HttpResponseRedirect('/blog/')
 
-
     return render(request,
                   'templates/blog/post.html',
-                  {'post' : post}) #post if valid, none if not
+                  {'post': post}) #post if valid, none if not
 
 
 def comment(request, post_id):

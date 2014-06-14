@@ -1,41 +1,39 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block head %}
-    <link rel="stylesheet" href="{% static "css/index.css" %}">
-    <script type="javascript" src="{% static 'js/index.js'%}"></script>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <script type="text/javascript" src="{% static 'js/index.js' %}"></script>
 {% endblock %}
 {% block main %}
     <div id="carousel-wrapper">
         <div id="carousel">
-            <div id="carousel-nav">
-                <img src="{% static 'img/previous.png' %}" id="prev">
-                <img src="{% static 'img/next.png' %}" id="next">
-            </div>
+            <img src="{% static 'img/previous.png' %}" class="left carousel-nav" id="prev">
+            <img src="{% static 'img/next.png' %}" class="right carousel-nav" id="next">
             <ul id="carousel-inner">
-                <li class="carousel-slide">
+                <li id="1">
                     <a href="#">
                         <img class="carousel-image" src="{% static 'img/placeholder1.png' %}">
 
                         <div class="carousel-desc">
-                            <p>some text here</p>
+                            <p>1</p>
                         </div>
                     </a>
                 </li>
-                <li class="carousel-slide">
+                <li id="2">
                     <a href="#">
                         <img class="carousel-image" src="{% static 'img/placeholder2.png' %}">
 
                         <div class="carousel-desc">
-                            <p>some text here</p>
+                            <p>2</p>
                         </div>
                     </a>
                 </li>
-                <li class="carousel-slide">
+                <li id="3">
                     <a href="#">
                         <img class="carousel-image" src="{% static 'img/placeholder3.png' %}">
 
                         <div class="carousel-desc">
-                            <p>some text here</p>
+                            <p>3</p>
                         </div>
                     </a>
                 </li>

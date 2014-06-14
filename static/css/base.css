@@ -119,3 +119,10 @@ footer{
 .clear{ /* allows for the reseting of floats and such*/
     clear:both;
 }
+
+.pull-right{
+    float:right;
+}
+.pull-left{
+    float:left;
+}
