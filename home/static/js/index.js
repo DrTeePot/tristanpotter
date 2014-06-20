@@ -17,6 +17,7 @@ $(document).ready(function(){
 
     var on_resize = function(){
         $('.carousel-image').width(carousel.width).height(carousel.height);
+        $('.carousel-desc').width(carousel.width);
 //        carouselInner.find('li').width(carousel.width).height(carousel.height);
         carouselInner.css('left', -carousel.width);
         carousel = {
