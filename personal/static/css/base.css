@@ -56,6 +56,10 @@ a.navbar-brand:hover,a.navbar-brand:active{
     color: #49671e;
 }
 
+.navbar .icon-bar{
+    background-color: #98bf21;
+}
+
 #content{
     margin: 0 auto;
     padding: 0;
