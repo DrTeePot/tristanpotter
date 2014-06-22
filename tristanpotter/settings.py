@@ -39,7 +39,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'blog',
     'money_tracker',
-    'home',
+    'personal.home',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -88,14 +88,14 @@ LOGIN_URL = '/login/'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
-STATIC_PATH = os.path.join(BASE_DIR, 'static')
+STATIC_PATH = os.path.join(BASE_DIR, 'personal/static')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     STATIC_PATH,
 )
 
 # Template files
-TEMPLATE_PATH = os.path.join(BASE_DIR, 'templates')
+TEMPLATE_PATH = os.path.join(BASE_DIR, 'personal/templates')
 TEMPLATE_DIRS = {
     TEMPLATE_PATH
 }
