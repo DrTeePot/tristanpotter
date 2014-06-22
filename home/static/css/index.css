@@ -7,5 +7,16 @@
 
 /* Carousel stuff. from now on this is index only*/
 .carousel{
-    height: 500px;
+    /*height: 500px;*/
+}
+
+.carousel .item img{
+    width: 100%;
+}
+
+.carousel-caption{
+    top:50%;
+    margin-top:-80px;
+    bottom:auto;
+    vertical-align: middle;
 }
