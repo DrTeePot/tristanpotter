@@ -28,6 +28,7 @@ body{
     margin: 0 auto;
     font-family:"Exo", Helvetica Neue, Helvetica, Arial, Sans-Serif;
     letter-spacing: 0.12em;
+    padding: 0 0 40px;
 }
 
 .navbar-main{
