@@ -14,8 +14,7 @@ This is the homepage.
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="stylesheet" href="{% static 'css/reset.css' %}">
-    <link rel="stylesheet" href="{% static 'home/css/base.css' %}">
-    <script src="{% static 'js/jquery-1.11.1.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'personal/css/base.css' %}">
     <!-- Bootstrap -->
     <link href="{% static 'bootstrap-3.1.1-dist/css/bootstrap.min.css' %}" rel="stylesheet">
 
@@ -48,15 +47,15 @@ This is the homepage.
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Tristan Potter</a>
+                <a class="navbar-brand" href="{% url 'personal_index' %}">Tristan Potter</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="nav-link"><a href="/projects">Projects</a></li>
-                    <li class="nav-link"><a href="/involvements">Involvements</a></li>
-                    <li class="nav-link"><a href="/about">About</a></li>
+                    <li class="nav-link"><a href="{% url 'personal_projects' %}">Projects</a></li>
+                    <li class="nav-link"><a href="{% url 'personal_involvements' %}">Involvements</a></li>
+                    <li class="nav-link"><a href="about">About</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -64,14 +63,22 @@ This is the homepage.
         <!-- /.container-fluid -->
     </div>
 </div>
-
+<div id="nav-spacer" style="height: 50px;"></div>
 {% block hero %}
 {% endblock %}
 {% block main %}
 {% endblock %}
-<footer>
-    <p class="text-center"> stuff that goes in footer here!!</p>
+<footer class="container">
+    <p class="text-center">
+        Copyright: Tristan Potter 2014 &copy;
+    </p>
+    <p class="text-center">
+        <a href="mailto:twmpotte@uwaterloo.ca">twmpotte@uwaterloo.ca</a>
+    </p>
 </footer>
+<script src="{% static 'js/jquery-1.11.1.js' %}"></script>
 <script src="{% static 'bootstrap-3.1.1-dist/js/bootstrap.min.js' %}"></script>
+{% block scripts %}
+{% endblock %}
 </body>
 </html>

@@ -1,0 +1,62 @@
+{% extends 'personal/base.html' %}
+{% load static %}
+{% block scripts %}
+    <script src="{% static 'personal/js/projects.js' %}"></script>
+{% endblock %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'personal/css/projects.css' %}">
+{% endblock %}
+
+{% block main %}
+
+    <div class="container features">
+        <hr class="feature-spacer">
+        <div class="row">
+            <div class="col-md-3 col-xs-6">
+                <div class="project">
+                    <img src="{% static 'personal/img/links-pi-cristian.png' %}" class="img-circle">
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <div class="project">
+                    <img src="{% static 'personal/img/links-pi-cristian.png' %}" class="img-circle">
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <div class="project">
+                    <img src="{% static 'personal/img/links-pi-cristian.png' %}" class="img-circle">
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <div class="project">
+                    <img src="{% static 'personal/img/links-pi-cristian.png' %}" class="img-circle">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-xs-6">
+                <div class="project">
+                    <img src="{% static 'personal/img/links-pi-cristian.png' %}"
+                         width="170" height="170"
+                         class="img-circle">
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <div class="project">
+                    <img src="{% static 'personal/img/links-pi-cristian.png' %}" class="img-circle">
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <div class="project">
+                    <img src="{% static 'personal/img/links-pi-cristian.png' %}" class="img-circle">
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <div class="project">
+                    <img src="{% static 'personal/img/links-pi-cristian.png' %}" class="img-circle">
+                </div>
+            </div>
+        </div>
+        <hr class="feature-spacer">
+    </div>
+{% endblock %}

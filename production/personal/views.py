@@ -5,5 +5,17 @@ from django.shortcuts import render
 
 def index(request):
     return render(request,
-                  'home/index.html',
+                  'personal/index.html',
+                  {})
+
+
+def involvements(request):
+    return render(request,
+                  'personal/involvements.html',
+                  {})
+
+
+def projects(request):
+    return render(request,
+                  'personal/projects.html',
                   {})

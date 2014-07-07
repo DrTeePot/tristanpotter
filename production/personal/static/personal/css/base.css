@@ -84,3 +84,7 @@ footer{
 .pull-left{
     float:left;
 }
+
+.feature-spacer{
+    margin:40px 0;
+}
