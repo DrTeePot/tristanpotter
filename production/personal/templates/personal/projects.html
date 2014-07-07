@@ -7,10 +7,28 @@
     <link rel="stylesheet" href="{% static 'personal/css/projects.css' %}">
 {% endblock %}
 
-{% block main %}
-
-    <div class="container features">
+{% block hero %}
+    <div class="container">
         <hr class="feature-spacer">
+        <div class="row">
+            <div class="colxs12">
+                <h1 class="text-center">Involvements </h1>
+
+                <p>I am interested in a lot of things, and I try my best to find like-minded people to share my
+                    interests
+                    with.
+                    This is a list of all the things I'm involved in from most to least recent (by ending and starting
+                    date). The list ranges
+                    from clubs, to teams, to bands, to student politics. If you have any questions about any of them
+                    email
+                    me at
+                    <code> twmpotte@uwaterloo.ca</code>.</p>
+            </div>
+        </div>
+        <hr class="feature-spacer">
+    </div>
+{% endblock %}
+{% block main %}
         <div class="row">
             <div class="col-md-3 col-xs-6">
                 <div class="project">
@@ -58,5 +76,4 @@
             </div>
         </div>
         <hr class="feature-spacer">
-    </div>
 {% endblock %}

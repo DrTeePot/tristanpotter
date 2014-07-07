@@ -3,94 +3,38 @@
 {% block head %}
     <link rel="stylesheet" href="{% static 'personal/css/index.css' %}">
 {% endblock %}
-
 {% block hero %}
-    <!-- Carousel ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="item active">
-                <a href="#">
-                    <img src="{% static 'personal/img/placeholder1.png' %}" alt="First slide">
-
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Example headline.</h1>
-
-                            <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and
-                                "previous"
-                                Glyphicon buttons on the left and right might not load/display properly due to web
-                                browser
-                                security rules.</p>
-
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="item">
-                <img src="{% static 'personal/img/placeholder1-2.png' %}" alt="Second slide">
-
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>Another example headline.</h1>
-
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                            gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="{% static 'personal/img/placeholder1-3.png' %}" alt="Third slide">
-
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>One more for good measure.</h1>
-
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                            gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span
-                class="glyphicon glyphicon-chevron-left"></span></a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next"><span
-                class="glyphicon glyphicon-chevron-right"></span></a>
-    </div><!-- /.carousel -->
-{% endblock %}
-{% block main %}
-
-    <div class="container features">
+    <div class="container">
         <hr class="feature-spacer">
         <div class="row">
             <div class="colxs12">
-                <h1 class="text-center">Hello! </h1>
+                <h1 class="text-center">Involvements </h1>
 
-                <p>I see you have decided to scroll down a bit and explore this page. It contains a brief summary of
-                    some of my major accomplishments so far. If you want a more in-depth look, navigate to the <code>Projects</code>
-                    and <code>Involvements</code> links which are always present at the top of the page.</p>
+                <p>I am interested in a lot of things, and I try my best to find like-minded people to share my
+                    interests
+                    with.
+                    This is a list of all the things I'm involved in from most to least recent (by ending and starting
+                    date). The list ranges
+                    from clubs, to teams, to bands, to student politics. If you have any questions about any of them
+                    email
+                    me at
+                    <code> twmpotte@uwaterloo.ca</code>.</p>
             </div>
         </div>
         <hr class="feature-spacer">
+    </div>
+{% endblock %}
+{% block main %}
         <div class="row">
+            <div class="col-md-5">
+                <img class="img-responsive" src="{% static 'personal/img/Cat-wallpaper-21.jpg' %}">
+            </div>
             <div class="col-md-7">
                 <h3>Web Developer</h3>
 
                 <p>I see you have decided to scroll down a bit and explore this page. It contains a brief summary of
                     some of my major accomplishments so far. If you want a more in-depth look, navigate to the <code>Projects</code>
                     and <code>Involvements</code> links which are always present at the top of the page.</p>
-            </div>
-            <div class="col-md-5">
-                <img class="img-responsive" src="{% static 'personal/img/Cat-wallpaper-21.jpg' %}">
             </div>
         </div>
         <hr class="feature-spacer">
@@ -109,9 +53,11 @@
                     in student societies and committees. </p>
 
                 <p>In first year I was a First Year Representative for both semesters, and going into
-                    second year I will be a Computer Science Representative. In addition to the responsibilities that come with
+                    second year I will be a Computer Science Representative. In addition to the responsibilities that
+                    come with
                     those positions, I am also chair of the Policy Committee (a committee that is investigating changes
-                    to the way that the Mathematics Society operates) and was one of 3 people responsible for recommending
+                    to the way that the Mathematics Society operates) and was one of 3 people responsible for
+                    recommending
                     the Vice President Finance for the Summer 2014 semester.</p>
 
                 <p>In addition to my work with the Mathematics Society, I am also involved with the Math Endowment Fund
@@ -124,8 +70,9 @@
                     </div>
                 </a>
 
-                <p>Finally, I have a seat as the Computer Science Representative on the Undergraduate Affairs Committee, which reports
-                to the Faculty Council of the Department of Mathematics and follows its responsibilities in
+                <p>Finally, I have a seat as the Computer Science Representative on the Undergraduate Affairs Committee,
+                    which reports
+                    to the Faculty Council of the Department of Mathematics and follows its responsibilities in
                     <a href="https://math.uwaterloo.ca/math/faculty-staff/faculty-council/laws" target="_blank">
                         the By-Laws.
                     </a></p>
@@ -133,6 +80,9 @@
         </div>
         <hr class="feature-spacer">
         <div class="row">
+            <div class="col-md-5">
+                <img class="img-responsive" src="{% static 'personal/img/Cat-wallpaper-21.jpg' %}">
+            </div>
             <div class="col-md-7">
                 <h3>Java Line-Rendering Engine</h3>
 
@@ -144,10 +94,7 @@
                     to
                     contact me using the information to the left.</p>
             </div>
-            <div class="col-md-5">
-                <img class="img-responsive" src="{% static 'personal/img/Cat-wallpaper-21.jpg' %}">
-            </div>
+
         </div>
         <hr class="feature-spacer">
-    </div>
 {% endblock %}
