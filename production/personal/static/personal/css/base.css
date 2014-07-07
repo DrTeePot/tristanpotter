@@ -69,7 +69,9 @@ a.navbar-brand:hover,a.navbar-brand:active{
     z-index: 0;
 }
 
-
+.container p{
+    margin: 0 10px 0 10px;
+}
 footer{
 
 }
