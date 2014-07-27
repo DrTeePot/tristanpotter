@@ -12,6 +12,7 @@ urlpatterns = patterns('',
     url(r'^$', include('production.personal.urls')),
     url(r'^tristan$', lambda x: HttpResponseRedirect('/tristan/')),
     url(r'^tristan/', include('production.personal.urls'), name='personal'),
+    url(r'^mockups/', include('mockups.urls'), name='mockups'),
     url(r'^money/', include('money_tracker.urls')),
     url(r'^admin/', include(admin.site.urls)),
 
