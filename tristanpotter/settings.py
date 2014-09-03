@@ -40,7 +40,7 @@ INSTALLED_APPS = (
     'blog',
     'money_tracker',
     'production.personal',
-    'mockups',
+    'mockups.eroshair',
 )
 
 MIDDLEWARE_CLASSES = (
