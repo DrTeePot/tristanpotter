@@ -6,17 +6,26 @@
 */
 
 /* Carousel stuff. from now on this is index only*/
-.carousel{
-    /*height: 500px;*/
+/*.carousel{*/
+/*height: 500px;*/
+/*}*/
+
+/*.carousel .item img{*/
+/*width: 100%;*/
+/*}*/
+
+/*.carousel-caption{*/
+/*top:50%;*/
+/*margin-top:-80px;*/
+/*bottom:auto;*/
+/*vertical-align: middle;*/
+/*}*/
+
+#hero {
+    background-color: white;
 }
 
-.carousel .item img{
-    width: 100%;
+#hero h1 {
+    font-size: 8em;
 }
 
-.carousel-caption{
-    top:50%;
-    margin-top:-80px;
-    bottom:auto;
-    vertical-align: middle;
-}

@@ -19,3 +19,9 @@ def projects(request):
     return render(request,
                   'personal/projects.html',
                   {})
+
+
+def about(request):
+    return render(request,
+                  'personal/about.html',
+                  {})

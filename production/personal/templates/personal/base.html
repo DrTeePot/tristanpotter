@@ -35,6 +35,10 @@ This is the homepage.
 </head>
 
 <body>
+{# Background image #}
+<div class="bg">
+    <img src="{% static 'personal/img/math_and_computer_building_1.jpg' %}">
+</div>
 <div class="container">
     <div class="navbar navbar-main navbar-fixed-top" role="navigation">
         <div class="container-fluid">
@@ -64,9 +68,9 @@ This is the homepage.
     </div>
 </div>
 <div id="nav-spacer" style="height: 50px;"></div>
+<div class="container">
 {% block hero %}
 {% endblock %}
-<div class="container">
     {% block main %}
     {% endblock %}
 </div>
@@ -74,6 +78,7 @@ This is the homepage.
     <p class="text-center">
         Copyright: Tristan Potter 2014 &copy;
     </p>
+
     <p class="text-center">
         <a href="mailto:twmpotte@uwaterloo.ca">twmpotte@uwaterloo.ca</a>
     </p>
