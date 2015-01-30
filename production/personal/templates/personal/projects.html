@@ -9,140 +9,161 @@
 
 {% block hero %}
     <div class="container">
-        <hr class="feature-spacer">
-        <div class="row">
-            <div class="col-xs-12">
-                <h1 class="text-center">Projects </h1>
-
-                <p> I like to program, and these are some things I have done. Unfortunately, some of them were done when I
-                    didn't have GitHub, so the versions seen are random backups I found.</p>
-                <p> If you have any questions about any of them, email me at <code> tristan.potter@uwaterloo.ca</code>
-                    .</p>
+        <div id="hero">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1 class="text-center">Projects </h1>
+                </div>
             </div>
         </div>
-        <hr class="feature-spacer">
     </div>
 {% endblock %}
 {% block main %}
-        <div class="row">
-        <a class="project" href="https://github.com/DrTeePot/The-Mahogany-Engine">
-                        <div class="project">
-                            <h3>3D Line-based rendering engine</h3>
-                            <h2>Git Source:</h2>
-                            <h4>https://github.com/DrTeePot/The-Mahogany-Engine</h4>
-                            <h5>The first medium sized engine my team created, made as an extra-difficult culminating project. <br> Written in Java, this project uses no external 3D or vector libraries and implements OOP principles.</h5>
-                        </div>
-                    </a>
+    <div class="row">
+        <div class="col-xs-12">
+            <p> I like to program, and these are some things I have done. Unfortunately, some of them were done
+                when I
+                didn't have GitHub, so the versions seen are random backups I found.</p>
 
-
-                    <a class="project" href="https://github.com/DrTeePot/Self-Website.git">
-                        <div class="project">
-                            <h3>Personal Website</h3>
-                            <h2>Git Source:</h2>
-                            <h4>https://github.com/DrTeePot/Self-Website.git</h4>
-                            <h5>This website. <br>Created to expand my knowledge of CSS, HTML, Python, and other web-based technologies as well as to provide a place for me to document my achievements, projects, and thoughts.</h5>
-                        </div>
-                    </a>
-
-
-                    <a class="project" href="https://github.com/DrTeePot/DiceRollGame">
-                        <div class="project">
-                            <h3>Dice Game</h3>
-                            <h2>Git Source:</h2>
-                            <h4>https://github.com/DrTeePot/DiceRollGame</h4>
-                            <h5>A first exploration into GUI design on Java. <br> Contains dynamic interface generation, enumeration, and lots of gambling. Prepare to loose whatever points you put in.</h5>
-                        </div>
-                    </a>
-
-
-                    <a class="project" href="https://github.com/DrTeePot/HighSchool">
-                        <div class="project">
-                            <h3>High School Projects</h3>
-                            <h2>Git Source:</h2>
-                            <h4>https://github.com/DrTeePot/HighSchool</h4>
-                            <h5>A collection of assignments that I worked on in highschool. <br>
-                            Note that these were found on a USB key after graduation, and may not be the complete final version of the project.</h5>
-                        </div>
-                    </a>
-
-                    <a class="project" href="https://github.com/DrTeePot/Songs">
-                        <div class="project">
-                            <h3>Songs</h3>
-                            <h2>Git Source:</h2>
-                            <h4>https://github.com/DrTeePot/Songs</h4>
-                            <h5>These are some songs that I wrote a long time ago. <br>
-                            These are first forays into song writing, please don't judge me to harshly.</h5>
-                        </div>
-                    </a>
-
-                    <a class="project" href="https://github.com/DrTeePot/FallingBlocks">
-                        <div class="project">
-                            <h3>Falling Blocks</h3>
-                            <h2>Git Source:</h2>
-                            <h4>https://github.com/DrTeePot/FallingBlocks</h4>
-                            <h5>A game in which one avoids blocks falling from the sky. <br>
-                            This was my first serious try at OOP, but unfortunately I lost most of my progress. This is an early version, and I intend to work it back to its former glory. </h5>
-                        </div>
-                    </a>
-
-                    <a class="project">
-                        <div class="project">
-                            <h3>Lender</h3>
-                            <h2>No source available</h2>
-                            <h4>N/A</h4>
-                            <h5>A first foray into Android development. <br>
-                            This is a work in progress, and is no where near complete. It has been put on hold recently due to other commitments. </h5>
-                        </div>
-                    </a>
-{#            <div class="col-md-3 col-xs-6">#}
-{#                <div class="project img-circle">#}
-{#                    <img src="{% static 'personal/img/links-pi-cristian.png' %}" class="img-circle">#}
-{#                    <div>#}
-{#                        <h3> Title thing </h3>#}
-{#                        <p>This is a bunch fo random text to see if it gets formated in a#}
-{#                    circle cause that would be awesome</p>#}
-{#                    </div>#}
-{#                </div>#}
-{#            </div>#}
-{#            <div class="col-md-3 col-xs-6">#}
-{#                <div class="project">#}
-{#                    <img src="{% static 'personal/img/links-pi-cristian.png' %}" class="img-circle">#}
-{#                </div>#}
-{#            </div>#}
-{#            <div class="col-md-3 col-xs-6">#}
-{#                <div class="project">#}
-{#                    <img src="{% static 'personal/img/links-pi-cristian.png' %}" class="img-circle">#}
-{#                </div>#}
-{#            </div>#}
-{#            <div class="col-md-3 col-xs-6">#}
-{#                <div class="project">#}
-{#                    <img src="{% static 'personal/img/links-pi-cristian.png' %}" class="img-circle">#}
-{#                </div>#}
-{#            </div>#}
-{#        </div>#}
-{#        <div class="row">#}
-{#            <div class="col-md-3 col-xs-6">#}
-{#                <div class="project">#}
-{#                    <img src="{% static 'personal/img/links-pi-cristian.png' %}"#}
-{#                         width="170" height="170"#}
-{#                         class="img-circle">#}
-{#                </div>#}
-{#            </div>#}
-{#            <div class="col-md-3 col-xs-6">#}
-{#                <div class="project">#}
-{#                    <img src="{% static 'personal/img/links-pi-cristian.png' %}" class="img-circle">#}
-{#                </div>#}
-{#            </div>#}
-{#            <div class="col-md-3 col-xs-6">#}
-{#                <div class="project">#}
-{#                    <img src="{% static 'personal/img/links-pi-cristian.png' %}" class="img-circle">#}
-{#                </div>#}
-{#            </div>#}
-{#            <div class="col-md-3 col-xs-6">#}
-{#                <div class="project">#}
-{#                    <img src="{% static 'personal/img/links-pi-cristian.png' %}" class="img-circle">#}
-{#                </div>#}
-{#            </div>#}
+            <p> If you have any questions about any of them, email me at <code>
+                tristan.potter@uwaterloo.ca</code>.</p>
         </div>
-        <hr class="feature-spacer">
+    </div>
+    <hr class="feature-spacer">
+    <div class="row">
+        <a class="project" href="https://github.com/DrTeePot/The-Mahogany-Engine">
+            <div class="project">
+                <h3>3D Line-based rendering engine</h3>
+
+                <h2>Git Source:</h2>
+                <h4>https://github.com/DrTeePot/The-Mahogany-Engine</h4>
+                <h5>The first medium sized engine my team created, made as an extra-difficult culminating project. <br>
+                    Written in Java, this project uses no external 3D or vector libraries and implements OOP principles.
+                </h5>
+            </div>
+        </a>
+
+
+        <a class="project" href="https://github.com/DrTeePot/Self-Website.git">
+            <div class="project">
+                <h3>Personal Website</h3>
+
+                <h2>Git Source:</h2>
+                <h4>https://github.com/DrTeePot/Self-Website.git</h4>
+                <h5>This website. <br>Created to expand my knowledge of CSS, HTML, Python, and other web-based
+                    technologies as well as to provide a place for me to document my achievements, projects, and
+                    thoughts.</h5>
+            </div>
+        </a>
+
+
+        <a class="project" href="https://github.com/DrTeePot/DiceRollGame">
+            <div class="project">
+                <h3>Dice Game</h3>
+
+                <h2>Git Source:</h2>
+                <h4>https://github.com/DrTeePot/DiceRollGame</h4>
+                <h5>A first exploration into GUI design on Java. <br> Contains dynamic interface generation,
+                    enumeration, and lots of gambling. Prepare to loose whatever points you put in.</h5>
+            </div>
+        </a>
+
+
+        <a class="project" href="https://github.com/DrTeePot/HighSchool">
+            <div class="project">
+                <h3>High School Projects</h3>
+
+                <h2>Git Source:</h2>
+                <h4>https://github.com/DrTeePot/HighSchool</h4>
+                <h5>A collection of assignments that I worked on in highschool. <br>
+                    Note that these were found on a USB key after graduation, and may not be the complete final version
+                    of the project.</h5>
+            </div>
+        </a>
+
+        <a class="project" href="https://github.com/DrTeePot/Songs">
+            <div class="project">
+                <h3>Songs</h3>
+
+                <h2>Git Source:</h2>
+                <h4>https://github.com/DrTeePot/Songs</h4>
+                <h5>These are some songs that I wrote a long time ago. <br>
+                    These are first forays into song writing, please don't judge me to harshly.</h5>
+            </div>
+        </a>
+
+        <a class="project" href="https://github.com/DrTeePot/FallingBlocks">
+            <div class="project">
+                <h3>Falling Blocks</h3>
+
+                <h2>Git Source:</h2>
+                <h4>https://github.com/DrTeePot/FallingBlocks</h4>
+                <h5>A game in which one avoids blocks falling from the sky. <br>
+                    This was my first serious try at OOP, but unfortunately I lost most of my progress. This is an early
+                    version, and I intend to work it back to its former glory. </h5>
+            </div>
+        </a>
+
+        <a class="project">
+            <div class="project">
+                <h3>Lender</h3>
+
+                <h2>No source available</h2>
+                <h4>N/A</h4>
+                <h5>A first foray into Android development. <br>
+                    This is a work in progress, and is no where near complete. It has been put on hold recently due to
+                    other commitments. </h5>
+            </div>
+        </a>
+        {#            <div class="col-md-3 col-xs-6">#}
+        {#                <div class="project img-circle">#}
+        {#                    <img src="{% static 'personal/img/links-pi-cristian.png' %}" class="img-circle">#}
+        {#                    <div>#}
+        {#                        <h3> Title thing </h3>#}
+        {#                        <p>This is a bunch fo random text to see if it gets formated in a#}
+        {#                    circle cause that would be awesome</p>#}
+        {#                    </div>#}
+        {#                </div>#}
+        {#            </div>#}
+        {#            <div class="col-md-3 col-xs-6">#}
+        {#                <div class="project">#}
+        {#                    <img src="{% static 'personal/img/links-pi-cristian.png' %}" class="img-circle">#}
+        {#                </div>#}
+        {#            </div>#}
+        {#            <div class="col-md-3 col-xs-6">#}
+        {#                <div class="project">#}
+        {#                    <img src="{% static 'personal/img/links-pi-cristian.png' %}" class="img-circle">#}
+        {#                </div>#}
+        {#            </div>#}
+        {#            <div class="col-md-3 col-xs-6">#}
+        {#                <div class="project">#}
+        {#                    <img src="{% static 'personal/img/links-pi-cristian.png' %}" class="img-circle">#}
+        {#                </div>#}
+        {#            </div>#}
+        {#        </div>#}
+        {#        <div class="row">#}
+        {#            <div class="col-md-3 col-xs-6">#}
+        {#                <div class="project">#}
+        {#                    <img src="{% static 'personal/img/links-pi-cristian.png' %}"#}
+        {#                         width="170" height="170"#}
+        {#                         class="img-circle">#}
+        {#                </div>#}
+        {#            </div>#}
+        {#            <div class="col-md-3 col-xs-6">#}
+        {#                <div class="project">#}
+        {#                    <img src="{% static 'personal/img/links-pi-cristian.png' %}" class="img-circle">#}
+        {#                </div>#}
+        {#            </div>#}
+        {#            <div class="col-md-3 col-xs-6">#}
+        {#                <div class="project">#}
+        {#                    <img src="{% static 'personal/img/links-pi-cristian.png' %}" class="img-circle">#}
+        {#                </div>#}
+        {#            </div>#}
+        {#            <div class="col-md-3 col-xs-6">#}
+        {#                <div class="project">#}
+        {#                    <img src="{% static 'personal/img/links-pi-cristian.png' %}" class="img-circle">#}
+        {#                </div>#}
+        {#            </div>#}
+    </div>
+    <hr class="feature-spacer">
 {% endblock %}
