@@ -1,0 +1,1 @@
+web: gunicorn tristanpotter.wsgi --log-file -
