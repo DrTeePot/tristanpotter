@@ -1,6 +1,5 @@
 from django.http import HttpResponse, HttpRequest
 from django.shortcuts import render
-from tristanpotter.settings import STATIC_PATH
 # Create your views here.
 
 
