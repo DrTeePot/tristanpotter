@@ -1,32 +1,5 @@
 /.idea
-.idea
-
-.idea/inspectionProfiles/Project_Default.xml
-
-.idea/inspectionProfiles/Project_Default.xml
-
-.idea/jsLibraryMappings.xml
-
-.idea/jsLinters/jshint.xml
-
-.idea/tristanpotter.iml
-
-.idea/workspace.xml
-
-.idea/misc.xml
-
-.idea/vcs.xml
 
 *.pyc
-
-*.pyc
-
-tristanpotter/settings.pyc
-
-*.pyc
-
-.idea/misc.xml
-
-.idea/vcs.xml
 
 /venv
