@@ -59,7 +59,9 @@ This is the homepage.
                 <ul class="nav navbar-nav navbar-right">
                     <li class="nav-link"><a href="{% url 'personal_projects' %}">Projects</a></li>
                     <li class="nav-link"><a href="{% url 'personal_involvements' %}">Involvements</a></li>
-                    <li class="nav-link"><a href="{% url 'personal_about' %}">About</a></li>
+{#                    TODO Figure out a better way to do resume#}
+{#                    TODO UPDATE RESUME FILE!!!#}
+                    <li class="nav-link"><a href="{% static 'personal/img/Tristan_Potter_Resume.pdf' %}">Resume</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
