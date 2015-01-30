@@ -62,12 +62,13 @@ WSGI_APPLICATION = 'tristanpotter.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'tristanpotter',
-        'USER': 'django_tristan',
-        'PASSWORD': 'django',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        # 'NAME': 'tristanpotter',
+        # 'USER': 'django_tristan',
+        # 'PASSWORD': 'django',
+        # 'HOST': '127.0.0.1',
+        # 'PORT': '5432',
     }
 }
 
