@@ -1,5 +1,6 @@
 /.idea
-
+/staticfiles
+staticfiles
 *.pyc
 
 /venv
